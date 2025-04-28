@@ -1,1 +1,163 @@
-@import url(./style.css);
+:root {
+    --cor1: #002b45;
+    --cor2: #005f8d;
+    --cor3: #008cc1;
+    --cor4: #00b7e0;
+    --cor5: #aee2f8;
+    --transp1: rgba(0, 0, 0, 0.08);
+    --transp2: rgba(255, 255, 255, 0.9);
+    --text-color: #2b2b2b;
+    --light-gray: #f9f9f9;
+    --border-radius: 10px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  header, footer {
+    background-color: var(--cor1);
+    color: white;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid var(--cor3);
+  }
+  
+  footer {
+    border-top: 3px solid var(--cor3);
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--cor4);
+  }
+  
+  .button, .view-details, .cancel-button {
+    background-color: var(--cor3);
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover, .view-details:hover, .cancel-button:hover {
+    background-color: var(--cor2);
+  }
+  
+  .card {
+    background: white;
+    border: 1px solid var(--cor3);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px var(--transp1);
+    border-radius: var(--border-radius);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  /* Novos estilos inspirados no carro.png */
+  .hero {
+    background: linear-gradient(135deg, var(--cor1), var(--cor3));
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+  
+  #exploreBtn {
+    background-color: white;
+    color: var(--cor1);
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: all 0.3s;
+  }
+  
+  #exploreBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .saiba-mais-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    background-color: white;
+    margin: 2rem 0;
+  }
+  
+  .saiba-mais-card {
+    text-align: center;
+    padding: 1.5rem;
+    max-width: 300px;
+  }
+  
+  .saiba-mais-card h3 {
+    color: var(--cor1);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .saiba-mais-btn {
+    background-color: var(--cor3);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .saiba-mais-btn:hover {
+    background-color: var(--cor2);
+    transform: translateY(-3px);
+  }
